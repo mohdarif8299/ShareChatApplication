@@ -46,15 +46,16 @@ public class PostMediaAdapter extends RecyclerView.Adapter<PostMediaAdapter.View
         list.add("https://www.bacancytechnology.com/blog/wp-content/uploads/2018/08/Full-Stack-Dev-1024x559.jpg");
         list.add("https://firebasestorage.googleapis.com/v0/b/bookify-1cc7c.appspot.com/o/java13.mp4?alt=media&token=349c88be-a21d-4177-9c5a-7af8e801cae2");
         list.add("https://firebasestorage.googleapis.com/v0/b/bookify-1cc7c.appspot.com/o/google_jobs.mp4?alt=media&token=5064d7b7-e9a9-4ccc-ae6d-19159285e019");
-        MediaAdapter adapter = new MediaAdapter(context,list);
+        list.add("hellothis is a simple regarding java web development  lt=media&token=5064d7b7-e9a9-4ccc-ae6d-19159285e019");
+        MediaAdapter adapter = new MediaAdapter(context, list);
         holder.recyclerView.setAdapter(adapter);
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(holder.recyclerView);
         int[] attrs = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray =context.obtainStyledAttributes(attrs);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs);
         int backgroundResource = typedArray.getResourceId(0, 0);
         holder.popup_menu.setBackgroundResource(backgroundResource);
-        holder.popup_menu.setOnClickListener(v-> {
+        holder.popup_menu.setOnClickListener(v -> {
             PopupMenu popup = new PopupMenu(context, holder.popup_menu);
             popup.getMenuInflater().inflate(R.menu.post_options, popup.getMenu());
             popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -71,14 +72,17 @@ public class PostMediaAdapter extends RecyclerView.Adapter<PostMediaAdapter.View
             holder.like.startAnimation(myAnim);
         });
     }
+
     @Override
     public int getItemCount() {
         return 5;
     }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
-         RecyclerView recyclerView;
-         ImageView popup_menu;
-         ImageView like;
+        RecyclerView recyclerView;
+        ImageView popup_menu;
+        ImageView like;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             recyclerView = itemView.findViewById(R.id.inner_recycler);
