@@ -43,7 +43,7 @@
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"
                     android:layout_gravity="center"
-                    android:text="web_developer"
+                    android:text="\@androiddeveloper"
                     android:layout_marginLeft="10dp"
                     />
                 <ImageView

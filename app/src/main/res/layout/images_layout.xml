@@ -9,16 +9,19 @@
         android:layout_height="250dp"
         android:scaleType="fitXY"
       />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:id="@+id/relative"
-        >
     <VideoView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="250dp"
         android:id="@+id/videos"
         android:visibility="gone"
     />
-    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"
+        />
 </LinearLayout>

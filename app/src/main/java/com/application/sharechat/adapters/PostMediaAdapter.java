@@ -75,7 +75,7 @@ public class PostMediaAdapter extends RecyclerView.Adapter<PostMediaAdapter.View
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 1;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
